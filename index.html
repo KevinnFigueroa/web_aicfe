@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/main.css">
+</head>
+
+<body>
+  <div style="margin: -8px;">
+    <div id="background-search">
+      <h1>IP address Tracker</h1>
+      <div id="search">
+        <input type="text" placeholder="Search for any IP address or domain">
+        <button><img src="images/icon-arrow.svg" alt=""></button>
+      </div>
+      <div class="info-container">
+        <div class="info" id="info-left">
+          <div class="info-content" id="info-content-left">
+            <h4>IP ADDRESS</h4>
+            <h2>192.168.0.14</h2>
+          </div>
+        </div>
+        <div class="info" id="info-central">
+          <div class="info-content" id="info-content-central">
+            <h4>LOCATION</h4>
+            <h2>BROOKLYN NW, 10001</h2>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-content" id="info-content-central">
+            <h4>TIMEZONE</h4>
+            <h2>UTC-05:00</h2>
+          </div>
+        </div>
+        <div class="info" id="info-right">
+          <div class="info-content">
+            <h4>ISP</h4>
+            <h2>SPACEX STARLINKLLL</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mapid"></div>
+  </div>
+  <script src="static/main.js"></script>
+</body>
+
+</html>

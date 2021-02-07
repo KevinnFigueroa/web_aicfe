@@ -1,0 +1,109 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+#background-search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+    background-image: url("../images/pattern-bg.png");
+    position: relative;
+    z-index: 10;
+}
+
+#background-search h1 {
+    color: white;
+}
+
+#search {
+    display: flex;
+    align-self: center;
+}
+
+.info-container {
+    display: flex;
+    margin-bottom: -75px;
+}
+
+.info {
+    width: 250px;
+    height: 150px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#info-left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-width: .1px;
+
+}
+
+#info-right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+#info-content-central {
+    border-right: 1px outset black;
+}
+
+
+.info-content {
+    margin-left: 25px;
+    height: 65%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.info-content h4 {
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 3px;
+}
+
+.info-content h2 {
+    margin-top: -10px;
+    color: hsl(0, 0%, 17%);
+}
+
+#info-content-left {
+    border-right: 1px outset black;
+}
+
+#mapid {
+    position: relative;
+    height: 650px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.75);
+}
+
+input {
+    width: 450px;
+    height: 40px;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 17px;
+}
+
+button {
+    margin-left: -8px;
+    width: 50px;
+    height: 47px;
+    background: hsl(0, 0%, 17%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
