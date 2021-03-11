@@ -1,5 +1,30 @@
-body {
+body,
+html {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row-title {
+    display: flex;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.container-1 {
+    width: 33%;
+}
+
+.container-2 {
+    width: 33%;
+    text-align: center;
+}
+
+.container-3 {
+    width: 33%;
+    text-align: end;
 }
 
 #background-search {
@@ -18,6 +43,13 @@ body {
     color: white;
 }
 
+#firm {
+    color: white;
+    font-size: 20px;
+    padding-right: 5px;
+
+}
+
 #search {
     display: flex;
     align-self: center;
@@ -30,7 +62,8 @@ body {
 
 .info {
     width: 250px;
-    height: 150px;
+    height: auto;
+    padding-bottom: 15px;
     background: white;
     display: flex;
     flex-direction: column;
@@ -41,7 +74,6 @@ body {
 #info-left {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border-right-width: .1px;
 
 }
 
@@ -52,7 +84,7 @@ body {
 
 
 #info-content-central {
-    border-right: 1px outset black;
+    border-right: 1px solid rgba(60, 59, 64, .5);
 }
 
 
@@ -63,7 +95,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-
 }
 
 .info-content h4 {
@@ -77,7 +108,7 @@ body {
 }
 
 #info-content-left {
-    border-right: 1px outset black;
+    border-right: 1px solid rgba(60, 59, 64, .5);
 }
 
 #mapid {
@@ -93,7 +124,7 @@ input {
     width: 450px;
     height: 40px;
     font-family: 'Rubik', sans-serif;
-    padding-left: 40px;
+    padding-left: 10px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     font-size: 17px;
@@ -106,4 +137,69 @@ button {
     background: hsl(0, 0%, 17%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.firm-container {
+    background-color: hsl(0, 0%, 17%);
+    display: inline-flex;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 10px;
+    height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .info-container {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    #info-content-central {
+        border-right: none;
+    }
+
+    #info-content-left {
+        border-right: none;
+    }
+
+    #info-left {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+
+    #info-right {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    .info-content {
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .info-content h4 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .info-content h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .info {
+        height: auto;
+    }
+
+    input {
+        width: 220px;
+    }
+
+    #firm {
+        font-size: 10px;
+    }
+
 }

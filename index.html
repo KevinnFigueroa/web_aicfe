@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <title>Buscador por IP</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="" />
@@ -18,36 +18,46 @@
 </head>
 
 <body>
-  <div style="margin: -8px;">
+  <div>
     <div id="background-search">
-      <h1>IP address Tracker</h1>
+      <div class="row-title">
+        <div class="container-1"></div>
+        <div class="container-2">
+          <h1>IP address Tracker</h1>
+        </div>
+        <div class="container-3">
+          <div class="firm-container">
+            <h4 id="firm">Kevin Figueroa</h4>
+          </div>
+        </div>
+      </div>
       <div id="search">
         <input id="locationByIpAddress" type="text" placeholder="Search for any IP address or domain">
-        <button id="search"><img src="images/icon-arrow.svg" alt=""></button>
+        <button id="search-button"><img src="images/icon-arrow.svg" alt=""></button>
       </div>
       <div class="info-container">
         <div class="info" id="info-left">
           <div class="info-content" id="info-content-left">
             <h4>IP ADDRESS</h4>
-            <h2>192.168.0.14</h2>
+            <h2 id="ip">192.168.0.14</h2>
           </div>
         </div>
         <div class="info" id="info-central">
           <div class="info-content" id="info-content-central">
             <h4>LOCATION</h4>
-            <h2>BROOKLYN NW, 10001</h2>
+            <h2 id="location">BROOKLYN NW, 10001 </h2>
           </div>
         </div>
         <div class="info">
           <div class="info-content" id="info-content-central">
             <h4>TIMEZONE</h4>
-            <h2>UTC-05:00</h2>
+            <h2 id="timezone">UTC-05:00</h2>
           </div>
         </div>
         <div class="info" id="info-right">
           <div class="info-content">
             <h4>ISP</h4>
-            <h2>SPACEX STARLINKLLL</h2>
+            <h2 id="isp">SPACEX STARLINKLLL</h2>
           </div>
         </div>
       </div>
@@ -56,23 +66,5 @@
   </div>
   <script src="static/main.js"></script>
 </body>
-
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript">
-  var ip = "8.8.8.8";
-  var api_key = "at_7NtOVTbokqDttdukaooZLHPA4focy";
-
-  $(function () {
-    $.ajax({
-      url: "https://geo.ipify.org/api/v1",
-      data: { apiKey: api_key, ipAddress: ip },
-      success: function (data) {
-        console.log("AHREE respondio: " + data);
-        $("body").append("<pre>" + JSON.stringify(data, "", 2) + "</pre>");
-      }
-    });
-  });
-</script>
--->
 
 </html>
