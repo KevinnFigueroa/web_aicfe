@@ -1,70 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Menu responsive</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Buscador por IP</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="static/main.css">
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Logo <span>AICFE - MORENO</span></h1>
+      </div>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa fa-pencil-alt site-nav--icon"></i>REUNIÓN EN VIVO</a
+            >
+          </li>
 
-<body>
-  <div>
-    <div id="background-search">
-      <div class="row-title">
-        <div class="container-1"></div>
-        <div class="container-2">
-          <h1>IP address Tracker</h1>
-        </div>
-        <div class="container-3">
-          <div class="firm-container">
-            <h4 id="firm">Kevin Figueroa</h4>
-          </div>
-        </div>
+          <li>
+            <a href="#"><i class="fa fa-pencil-alt site-nav--icon"></i>BLOG</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-pencil-alt site-nav--icon"></i>SEMINARIO</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-pencil-alt site-nav--icon"></i>NOSOTROS</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-envelope site-nav--icon"></i>EVENTOS</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa fa-envelope site-nav--icon"></i>CONTACTO</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+        <div class="hamburger"></div>
       </div>
-      <div id="search">
-        <input id="locationByIpAddress" type="text" placeholder="Search for any IP address or domain">
-        <button id="search-button"><img src="images/icon-arrow.svg" alt=""></button>
-      </div>
-      <div class="info-container">
-        <div class="info" id="info-left">
-          <div class="info-content" id="info-content-left">
-            <h4>IP ADDRESS</h4>
-            <h2 id="ip">192.168.0.14</h2>
-          </div>
-        </div>
-        <div class="info" id="info-central">
-          <div class="info-content" id="info-content-central">
-            <h4>LOCATION</h4>
-            <h2 id="location">BROOKLYN NW, 10001 </h2>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-content" id="info-content-central">
-            <h4>TIMEZONE</h4>
-            <h2 id="timezone">UTC-05:00</h2>
-          </div>
-        </div>
-        <div class="info" id="info-right">
-          <div class="info-content">
-            <h4>ISP</h4>
-            <h2 id="isp">SPACEX STARLINKLLL</h2>
-          </div>
-        </div>
-      </div>
+    </header>
+
+    <div class="principal-carrousel">
+      <img class="img-carrousel"
+        src="images/principal_carrousel/fondo-girasoles.jpg"
+        alt=""
+        srcset=""
+      />
+<div class="container-text-carrousel">
+
+  <h4>
+    Venid a mí todos los que estáis trabajados y cargados, y yo os haré
+    descansar. Llevad mi yugo sobre vosotros, y aprended de mí, que soy
+    manso y humilde de corazón; y hallaréis descanso para vuestras almas;
+    porque mi yugo es fácil, y ligera mi carga. <br> <br>
+    <span style="color: black; font-size: 30px; font-weight: bold;">Mateo 11:28-30</span>
+  </h4>
+</div>
     </div>
-    <div id="mapid"></div>
-  </div>
-  <script src="static/main.js"></script>
-</body>
 
+
+    <div class="banner-1">
+      <h1>¿Qué es el evangelio?</h1>
+    </div>
+    <div class="info-1">
+
+      <div class="container-info-1">
+         <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Juan 3:16</span><br>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        </div>
+        <div class="container-info-2">
+           <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Lucas 4:16</span><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        
+          </div>
+    </div>
+
+    <div class="banner-2">
+      <h1>¿Cómo ser salvo?</h1>
+    </div>
+    <div class="info-2">
+      <div class="container-info-1">
+         <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Juan 3:16</span><br>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        </div>
+        <div class="container-info-2">
+           <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Lucas 4:16</span><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        
+          </div>
+    </div>
+
+    <div class="banner-3">
+      <h1>¿Cómo debo seguir?</h1>
+    </div>
+
+    <div class="info-3">
+      <div class="container-info-1">
+         <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Juan 3:16</span><br>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        </div>
+        <div class="container-info-2">
+           <img src="images/principal_carrousel/fondo-girasoles.jpg" width="250px" height="150px" hspace="5" vspace="5" style="float: left;padding: 15px;" />
+          <span style="color: black; font-weight: bold; font-size: 30px;">Lucas 4:16</span><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aspernatur sint quisquam ullam vitae omnis alias delectus magni illum quidem saepe ducimus temporibus cum eaque quaerat recusandae totam aut commodi tempora quod pariatur, fugiat aliquam odit. Dicta quod officia porro libero incidunt repellat dignissimos error cum consequuntur aliquam recusandae commodi ad doloribus, ipsum voluptate quis blanditiis? Quidem nisi, commodi voluptates facilis dolore iure,  nobis error blanditiis ipsa accusantium, assumenda tenetur obcaecati ad. Dolore reiciendis aliquid pariatur maxime laboriosam voluptate architecto doloremque maiores. Voluptatem obcaecati fugit, id sapiente blanditiis dolor, illum, ab mollitia molestiae laboriosam recusandae aperiam possimus unde numquam quasi facere accusantium nobis doloribus? Maxime voluptatem cupiditate quos modi nostrum tempore, molestiae saepe iusto accusantium cum harum maiores sapiente ut earum culpa vel magnam nemo quae laboriosam voluptatibus recusandae repellat? Aliquam deserunt earum beatae esse vitae quidem, est voluptates adipisci blanditiis inventore quia aut sapiente reprehenderit impedit nesciunt facilis in?
+        
+          </div>
+    </div>
+
+    <div class="suscribe-to-newsletter"></div>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-container-1">
+          <div class="footer-title">
+            <h2>Reuniones</h2>
+          </div>
+          <h3>Cultos</h3>
+          <h4>Sábados 20hrs y Domingos 19hrs</h4>
+          <h3>Reuniones de oración</h3>
+          <h4>Días miercoles 20hrs</h4>
+        </div>
+
+        <div class="footer-container-2">
+          <!--Aqui puedo hacer botones con iconos que lleven a las redesS-->
+          <div class="footer-title">
+            <h2>Redes</h2>
+          </div>
+          <div class="footer-container-2-buttons">
+            <button class="btn-facebook">
+              <h3>Facebook</h3>
+            </button>
+            <button class="btn-instagram">
+              <h3>Instagram</h3>
+            </button>
+
+            <button class="btn-youtube">
+              <h3>Youtube</h3>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-container-3">
+          <div class="footer-title">
+            <h2>Dónde nos encontramos</h2>
+          </div>
+          <!-- Aqui iria un mapa con la ubicación de la igle-->
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.945878037558!2d-58.79566148461427!3d-34.63080796643923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc943748b7d8b9%3A0x414fb3cba9b3d03d!2sIglesia%20De%20Los%20Cristianos%20De%20La%20Fe%20Evang%C3%A9lica!5e0!3m2!1ses-419!2sar!4v1623028479732!5m2!1ses-419!2sar"
+              style="border: 0"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-border"></div>
+        <div class="footer-bottom-content">
+          <h3 id="footer-bottom-name">AICFE - MORENO</h3>
+
+          <div id="footer-bottom-info">
+            <h4>Todos los derechos reservados - 2021</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
 </html>
